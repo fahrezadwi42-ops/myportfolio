@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Fahreza Dwi Nurfaizum - Junior Web Developer & UI/UX Designer dari SMK N 1 Bangsri. Fokus pada Web Development, UI/UX Design, dan Programming.">
+  <meta name="author" content="Fahreza Dwi Nurfaizum">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fahreza Dwi Nurfaizum — Junior Web Developer Showcase">
+  <meta property="og:description" content="Portofolio pribadi Fahreza Dwi Nurfaizum. Menampilkan skill programming, desain UI/UX, dan proyek pengembangan web.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:url" content="https://fahreza.dev">
+
+  <title>Fahreza Dwi Nurfaizum — Junior Web Developer</title>
+
+  <!-- Google Fonts Preconnect Hook -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet Hook -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+        01 — NAVBAR / HEADER SECTION
+  =========================================== -->
+  <header class="header" id="header">
+    <nav class="navbar nav-container" aria-label="Navigasi Utama">
+      <a href="#home" class="nav-logo" aria-label="Fahreza Dwi Nurfaizum Beranda">
+        <span class="logo-text">FAHREZA</span><span class="logo-accent">.DEV</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link">BERANDA</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">EDUCATION</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link">CERTIFICATES</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Beralih Mode Gelap/Terang">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+        </button>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Buka Menu Navigasi" aria-expanded="false" aria-controls="nav-menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ==========================================
+          02 — HERO SECTION
+    =========================================== -->
+    <section class="section hero" id="home" data-reveal>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-indicator" aria-hidden="true"></span>
+            <span class="status-text">AVAILABLE FOR PROJECTS & WORK</span>
+          </div>
+
+          <p class="hero-greeting">HALO, SAYA</p>
+          
+          <h1 class="hero-title">
+            <span class="title-line">FAHREZA</span>
+            <span class="title-line title-accent">DWI NURFAIZUM</span>
+          </h1>
+
+          <p class="hero-role">&lt;JUNIOR WEB DEVELOPER /&gt;</p>
+
+          <p class="hero-description">
+            Siswa SMK N 1 Bangsri jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Berfokus pada pembangunan antarmuka web modern, presisi visual UI/UX, dan penulisan kode yang bersih serta terstruktur.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">LIHAT PROYEK</a>
+            <a href="assets/docs/cv.pdf" class="btn btn-secondary" download>DOWNLOAD CV</a>
+            <a href="#contact" class="btn btn-outline">HUBUNGI SAYA</a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">CONNECT:</span>
+            <ul class="social-links">
+              <li><a href="[GITHUB_URL]" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GITHUB</a></li>
+              <li><a href="[LINKEDIN_URL]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LINKEDIN</a></li>
+              <li><a href="[INSTAGRAM_URL]" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">INSTAGRAM</a></li>
+              <li><a href="mailto:[EMAIL]" aria-label="Kirim Email">EMAIL</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <div class="frame-corner corner-tl">+</div>
+            <div class="frame-corner corner-tr">+</div>
+            <div class="frame-corner corner-bl">+</div>
+            <div class="frame-corner corner-br">+</div>
+            
+            <div class="profile-image-container">
+              <img src="assets/images/profile.jpg" alt="Foto Profil Fahreza Dwi Nurfaizum" class="profile-img" loading="eager">
+            </div>
+
+            <div class="frame-meta">
+              <span class="meta-label">REF_NO: 2026_DEV</span>
+              <span class="meta-status">SYS.ONLINE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          03 — ABOUT SECTION
+    =========================================== -->
+    <section class="section about" id="about" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">ABOUT ME</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-main">
+            <h3 class="about-heading">
+              Saya adalah seorang Junior Web Developer yang saat ini sedang menempuh pendidikan di SMK N 1 Bangsri dengan jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).
+            </h3>
+            
+            <div class="about-bio">
+              <p>
+                Saya memiliki fokus utama pada bidang Web Development, UI/UX Design, dan dasar-dasar Programming. Sebagai seorang pelajar, saya memiliki ketertarikan mendalam terhadap Frontend Development, Backend Development, Mobile Development, serta Digital Entrepreneurship.
+              </p>
+              <p>
+                Saya sadar bahwa perjalanan di dunia teknologi sangat panjang, sehingga saya berkomitmen untuk terus belajar, mengeksplorasi tools baru, dan mengasah keterampilan coding maupun desain demi membangun solusi digital yang bermanfaat dan responsif.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number">01</span>
+              <h4 class="highlight-title">Problem Solver</h4>
+              <p class="highlight-desc">Terbiasa menganalisis tantangan teknis dan mencari solusi kode yang efisien.</p>
+            </div>
+
+            <div class="highlight-item">
+              <span class="highlight-number">02</span>
+              <h4 class="highlight-title">UI/UX Enthusiast</h4>
+              <p class="highlight-desc">Memahami hirarki visual, whitespace, dan kenyamanan interaksi pengguna.</p>
+            </div>
+
+            <div class="highlight-item">
+              <span class="highlight-number">03</span>
+              <h4 class="highlight-title">Web Developer</h4>
+              <p class="highlight-desc">Mengembangkan aplikasi web menggunakan standar HTML5, CSS3, dan JavaScript.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          04 — SKILLS SECTION
+    =========================================== -->
+    <section class="section skills" id="skills" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">SKILLS & TECH STACK</h2>
+        </div>
+
+        <div class="skills-wrapper">
+          
+          <!-- Programming Category -->
+          <div class="skill-category">
+            <h3 class="category-title">// FRONTEND & BACKEND</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-number">01</span>
+                <span class="skill-name">HTML</span>
+                <span class="skill-cat">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">02</span>
+                <span class="skill-name">CSS</span>
+                <span class="skill-cat">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">03</span>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-cat">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">04</span>
+                <span class="skill-name">PHP</span>
+                <span class="skill-cat">Backend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">05</span>
+                <span class="skill-name">Laravel</span>
+                <span class="skill-cat">Backend</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Design Category -->
+          <div class="skill-category">
+            <h3 class="category-title">// DESIGN & INTERFACE</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-number">06</span>
+                <span class="skill-name">Figma</span>
+                <span class="skill-cat">UI/UX</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">07</span>
+                <span class="skill-name">UI/UX Design</span>
+                <span class="skill-cat">Design</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools Category -->
+          <div class="skill-category">
+            <h3 class="category-title">// TOOLS & WORKFLOW</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-number">08</span>
+                <span class="skill-name">Git</span>
+                <span class="skill-cat">Version Control</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">09</span>
+                <span class="skill-name">GitHub</span>
+                <span class="skill-cat">Platform</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">10</span>
+                <span class="skill-name">VS Code</span>
+                <span class="skill-cat">IDE</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          05 — PROJECTS SECTION
+    =========================================== -->
+    <section class="section projects" id="projects" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+        </div>
+
+        <p class="section-description">
+          Daftar proyek yang pernah saya kembangkan meliputi aplikasi web, desain antarmuka, dan eksplorasi pemrograman.
+        </p>
+
+        <!-- Project Filters -->
+        <div class="project-filters" role="tablist" aria-label="Filter Proyek">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" type="button">ALL</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" type="button">WEB</button>
+          <button class="filter-btn" data-filter="app" role="tab" aria-selected="false" type="button">APP</button>
+          <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false" type="button">UI/UX</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+          
+          <!-- Project 01 -->
+          <article class="project-card" data-category="web">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-1.jpg" alt="Pratinjau Proyek Web" class="project-image" loading="lazy">
+              <span class="project-number">01</span>
+            </div>
+            
+            <div class="project-content">
+              <span class="project-category">WEB DEVELOPMENT</span>
+              <h3 class="project-title">[NAMA PROYEK WEB]</h3>
+              <p class="project-description">[Deskripsi singkat mengenai fitur dan tujuan pengembangan proyek.]</p>
+
+              <ul class="project-tags">
+                <li>Laravel</li>
+                <li>Bootstrap</li>
+                <li>MySQL</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail.html?id=1" class="btn btn-small btn-primary">VIEW DETAILS</a>
+                <a href="[GITHUB_URL]" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary">GITHUB</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          06 — EXPERIENCE SECTION
+    =========================================== -->
+    <section class="section experience" id="experience" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title">PROJECT EXPERIENCE</h2>
+        </div>
+
+        <div class="timeline">
+          
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">[TAHUN]</span>
+              <span class="timeline-entity">SMK N 1 Bangsri</span>
+            </div>
+            
+            <div class="timeline-content">
+              <h3 class="timeline-role">Junior Web Developer (Academic Projects)</h3>
+              <p class="timeline-description">Mengembangkan berbagai proyek berbasis web dan desain antarmuka selama masa studi di SMK N 1 Bangsri, berfokus pada struktur kode yang rapi, performa, dan tampilan yang user-friendly.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          07 — EDUCATION SECTION
+    =========================================== -->
+    <section class="section education" id="education" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title">EDUCATION</h2>
+        </div>
+
+        <div class="education-list">
+          
+          <article class="education-item">
+            <div class="education-meta">
+              <span class="education-year">[TAHUN]</span>
+              <span class="education-status">PENDIDIKAN FORMAL</span>
+            </div>
+
+            <div class="education-content">
+              <h3 class="institution-name">SMK N 1 Bangsri</h3>
+              <p class="education-major">Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
+              <p class="education-description">
+                Mempelajari dasar-dasar pemrograman komputer, logika algoritma, basis data, pemodelan perangkat lunak, serta pengembangan aplikasi berbasis web dan gim.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          08 — CERTIFICATES SECTION
+    =========================================== -->
+    <section class="section certificates" id="certificates" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h2 class="section-title">CERTIFICATES</h2>
+        </div>
+
+        <div class="certificate-grid">
+          
+          <article class="certificate-card">
+            <div class="certificate-image-wrapper">
+              <img src="assets/certificates/certificate-1.jpg" alt="Pratinjau Sertifikat" class="certificate-image" loading="lazy">
+            </div>
+
+            <div class="certificate-content">
+              <span class="certificate-year">[TAHUN]</span>
+              <h3 class="certificate-title">[NAMA SERTIFIKAT]</h3>
+              <p class="certificate-issuer">Penerbit: [NAMA PENERBIT]</p>
+              <a href="assets/certificates/certificate-1.jpg" target="_blank" rel="noopener noreferrer" class="btn-link">LIHAT SERTIFIKAT →</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          09 — CONTACT SECTION
+    =========================================== -->
+    <section class="section contact" id="contact" data-reveal>
+      <div class="container">
+        
+        <div class="contact-wrapper">
+          
+          <div class="contact-info">
+            <span class="section-number">08</span>
+            <h2 class="contact-headline">
+              LET'S BUILD<br>
+              <span class="headline-accent">SOMETHING.</span>
+            </h2>
+
+            <p class="contact-subtext">
+              Tertarik bekerjasama, diskusi proyek, atau memiliki penawaran kerja? Silakan hubungi saya melalui form atau saluran di bawah ini.
+            </p>
+
+            <div class="contact-details">
+              <div class="detail-item">
+                <span class="detail-label">DIRECT EMAIL:</span>
+                <a href="mailto:[EMAIL]" class="detail-value">[EMAIL]</a>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-label">WHATSAPP:</span>
+                <a href="[WHATSAPP]" target="_blank" rel="noopener noreferrer" class="detail-value">[WHATSAPP]</a>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <span class="socials-label">FIND ME ON:</span>
+              <ul class="social-links">
+                <li><a href="[GITHUB_URL]" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+                <li><a href="[LINKEDIN_URL]" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+                <li><a href="[INSTAGRAM_URL]" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form">
+              
+              <div class="form-group">
+                <label for="user-name" class="form-label">NAMA LENGKAP</label>
+                <input type="text" id="user-name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="form-label">ALAMAT EMAIL</label>
+                <input type="email" id="user-email" name="email" class="form-input" placeholder="nama@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-subject" class="form-label">SUBJEK / JUDUL</label>
+                <input type="text" id="user-subject" name="subject" class="form-input" placeholder="Tujuan pesan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-message" class="form-label">PESAN</label>
+                <textarea id="user-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tuliskan detail pesan Anda..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">KIRIM PESAN →</button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+        10 — FOOTER SECTION
+  =========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">FAHREZA<span class="logo-accent">.DEV</span></a>
+        <p class="footer-desc">Junior Web Developer & UI/UX Design Enthusiast.</p>
+      </div>
+
+      <div class="footer-links">
+        <ul class="social-links">
+          <li><a href="[GITHUB_URL]" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+          <li><a href="[LINKEDIN_URL]" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+          <li><a href="[INSTAGRAM_URL]" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Fahreza Dwi Nurfaizum. All rights reserved.</p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas">BACK TO TOP ↑</a>
+      </div>
+
+    </div>
+  </footer>
+    <div class="certificate-content">
+              <span class="certificate-issuer">[PENERBIT SERTIFIKAT]</span>
+              <h3 class="certificate-title">[NAMA SERTIFIKAT / PELATIHAN]</h3>
+              <p class="certificate-date">[TAHUN / BULAN TERBIT]</p>
+              <a href="assets/certificates/certificate-1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-outline">LIHAT SERTIFIKAT</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          09 — CONTACT SECTION
+    =========================================== -->
+    <section class="section contact" id="contact" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number">08</span>
+          <h2 class="section-title">CONTACT ME</h2>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3 class="contact-heading">Mari Berkolaborasi!</h3>
+            <p class="contact-description">
+              Saya selalu terbuka untuk diskusi proyek, peluang kerja, atau sekadar berbagi ide mengenai Web Development dan UI/UX Design.
+            </p>
+
+            <ul class="contact-details">
+              <li class="contact-item">
+                <span class="contact-label">LOCATION:</span>
+                <span class="contact-value">Jepara, Jawa Tengah, Indonesia</span>
+              </li>
+              <li class="contact-item">
+                <span class="contact-label">EMAIL:</span>
+                <a href="mailto:[EMAIL]" class="contact-value">[EMAIL_ANDA@DOMAIN.COM]</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-label">STATUS:</span>
+                <span class="contact-value">Open for Opportunities</span>
+              </li>
+            </ul>
+          </div>
+
+          <form action="#" method="POST" class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subjek</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Subjek pesan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">KIRIM PESAN</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+        10 — FOOTER SECTION
+  =========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-text">FAHREZA</span><span class="logo-accent">.DEV</span>
+        </a>
+        <p class="footer-tagline">Junior Web Developer & UI/UX Designer</p>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 Fahreza Dwi Nurfaizum. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript Hook -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+  <!-- External Script Hook -->
+  <script src="js/script.js"></script>
+</body>
+</html>
