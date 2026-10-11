@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Fahreza Dwi Nurfaizum - Junior Web Developer & UI/UX Designer dari SMK N 1 Bangsri. Fokus pada Web Development, UI/UX Design, dan Programming.">
+  <meta name="author" content="Fahreza Dwi Nurfaizum">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fahreza Dwi Nurfaizum — Junior Web Developer Showcase">
+  <meta property="og:description" content="Portofolio pribadi Fahreza Dwi Nurfaizum. Menampilkan skill programming, desain UI/UX, dan proyek pengembangan web.">
+  <meta property="og:image" content="assets/images/profile.jpeg">
+  <meta property="og:url" content="https://fahreza.dev">
+
+  <title>Fahreza Dwi Nurfaizum — Junior Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+  <!-- Google Fonts Preconnect Hook -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet Hook -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+
+  <!-- ==========================================
+        00 — PRELOADER / OPENING SCREEN
+  =========================================== -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <span class="preloader-logo">
+        <span class="preloader-letter">F</span><span class="preloader-letter">A</span><span class="preloader-letter">H</span><span class="preloader-letter">R</span><span class="preloader-letter">E</span><span class="preloader-letter">Z</span><span class="preloader-letter">A</span> <span class="preloader-letter">D</span><span class="preloader-letter">W</span><span class="preloader-letter">I</span> <span class="preloader-letter">N</span><span class="preloader-letter">F</span>
+      </span>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloader-fill"></div>
+      </div>
+      <span class="preloader-percent" id="preloader-percent">0%</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+        01 — NAVBAR / HEADER SECTION
+  =========================================== -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="header-floating" id="header">
+    <div class="nav-pill">
+      <div class="nav-left">
+        <!-- Tombol Toggle Mobile Menu — dipindah ke kiri -->
+        <button id="menu-toggle" class="btn-menu-toggle" aria-expanded="false" aria-label="Buka Menu">
+          ☰
+        </button>
+
+        <!-- Logo -->
+        <a href="#home" class="nav-logo" aria-label="Fahreza - Beranda">
+          <img src="assets/images/logo.png" alt="Logo Fahreza" class="nav-logo-mark" width="58" height="30">
+        </a>
+      </div>
+
+      <!-- Menu Navigasi Utama -->
+      <ul class="nav-links" id="nav-menu">
+        <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+        <li><a href="#home" class="nav-link active-link">BERANDA</a></li>
+        <li><a href="#about" class="nav-link">TENTANG</a></li>
+        <li><a href="#skills" class="nav-link">SKILL</a></li>
+        <li><a href="#projects" class="nav-link">PROYEK</a></li>
+        <li><a href="#contact" class="nav-link">KONTAK</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Tombol Switcher Dark/Light Theme -->
+        <button id="theme-toggle" class="btn-theme" aria-label="Ubah Tema">
+          <span class="theme-icon">☼</span>
+        </button>
+
+        <!-- Tombol Aksi Kanan -->
+        <a href="#contact" class="btn-pill-cta">HUBUNGI</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==========================================
+          02 — HERO SECTION
+    =========================================== -->
+    <section class="section hero" id="home" data-reveal>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <p class="hero-greeting">HALO, SAYA</p>
+          
+          <h1 class="hero-title">
+            <span class="title-line">FAHREZA</span>
+            <span class="title-line title-accent">DWI NURFAIZUM</span>
+          </h1>
+
+          <p class="hero-role">JUNIOR UI/UX & WEB DEVELOPER</p>
+
+          <p class="hero-description">
+            Siswa SMK N 1 Bangsri jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Berfokus pada pembangunan antarmuka web modern, presisi visual UI/UX, dan penulisan kode yang bersih serta terstruktur.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">LIHAT PROYEK</a>
+            <a href="#contact" class="btn btn-outline">HUBUNGI SAYA</a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">CONNECT:</span>
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/fahrezadwi42-ops" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                  <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+                  <span>GITHUB</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/fahreza-dwi-nf-741545442/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                  <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z"/></svg>
+                  <span>LINKEDIN</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/fhrzdwin?stkn=Y3cyNmYybmg0Z2Nm" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                  <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  <span>INSTAGRAM</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fahrezadwi42@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Kirim Email">
+                  <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+                  <span>EMAIL</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+              HERO VISUAL (FOTO PARALLAX + IKON TEKNOLOGI MELAYANG TANPA LINGKARAN)
+              ========================================================================== -->
+        <div class="hero-visual">
+          <div class="hero-profile-wrapper">
+            <div class="profile-floating-card">
+
+              <!-- IKON TEKNOLOGI MELAYANG (TANPA LINGKARAN/BADGE) -->
+              <div class="orbit-container">
+                <i class="devicon-figma-plain orbit-icon"></i>
+                <i class="devicon-laravel-original colored orbit-icon"></i>
+                <i class="devicon-css3-plain colored orbit-icon"></i>
+                <i class="devicon-javascript-plain colored orbit-icon"></i>
+                <i class="devicon-html5-plain colored orbit-icon"></i>
+              </div>
+
+              <!-- FOTO UTAMA BUNDAR DI TENGAH -->
+              <div class="main-photo-frame">
+                <div class="photo-inner-wrapper">
+                  <img src="assets/images/profile.jpeg" alt="Foto Profil Fahreza Dwi Nurfaizum" class="main-photo" loading="eager">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+          03 — ABOUT SECTION
+    =========================================== -->
+    <section class="section about" id="about" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number"></span>
+          <h2 class="section-title">TENTANG SAYA</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-main">
+            <h3 class="about-heading">
+              Saya adalah UI/UX Designer dengan ketertarikan kuat pada Web Development, siswa SMK N 1 Bangsri jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).
+            </h3>
+            
+            <div class="about-bio">
+              <p>
+                Saya merancang pengalaman digital yang nyaman digunakan, mulai dari wireframe, prototype interaktif, hingga antarmuka akhir di Figma. Saya memperhatikan hirarki visual, konsistensi komponen, dan alur interaksi agar produk mudah dipahami penggunanya.
+              </p>
+              <p>
+                Di luar itu, saya juga bisa menerjemahkan hasil rancangan tersebut menjadi halaman web menggunakan Laravel, PHP, JavaScript, dan MySQL, sehingga desain yang dibuat benar-benar bisa digunakan.
+              </p>
+            </div>
+
+            <!-- Kartu sertifikat tunggal — ganti gambar, penyelenggara, judul, dan tahun sesuai sertifikat aslimu -->
+            <div class="about-certificate">
+              <div class="about-certificate-thumb">
+                <img src="assets/images/certificates/certificate-1.jpg" alt="Sertifikat Fahreza Dwi Nurfaizum" loading="lazy">
+              </div>
+              <div class="about-certificate-info">
+                <span class="about-certificate-issuer">DICODING</span>
+                <h4 class="about-certificate-title">Sertifikat Industri  / Pelatihan</h4>
+                <span class="about-certificate-date">2026</span>
+              </div>
+              <a href="assets/images/certificates/certificate-1.jpg" target="_blank" rel="noopener noreferrer" class="about-certificate-view" aria-label="Lihat sertifikat ukuran penuh">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </div>
+
+            <a href="assets/docs/cv.pdf" class="btn btn-secondary about-cv-btn" download>DOWNLOAD CV</a>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number">01</span>
+              <h4 class="highlight-title">UI/UX Design</h4>
+              <p class="highlight-desc">Merancang wireframe, prototype, dan antarmuka di Figma dengan hirarki visual yang jelas dan mudah dipahami.</p>
+            </div>
+
+            <div class="highlight-item">
+              <span class="highlight-number">02</span>
+              <h4 class="highlight-title">Design System</h4>
+              <p class="highlight-desc">Menjaga konsistensi komponen dan alur interaksi agar pengalaman pengguna terasa nyaman di setiap halaman.</p>
+            </div>
+
+            <div class="highlight-item">
+              <span class="highlight-number">03</span>
+              <h4 class="highlight-title">Web Development</h4>
+              <p class="highlight-desc">Kemampuan pendukung untuk menerjemahkan desain menjadi halaman web dengan Laravel, PHP, dan MySQL.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          04 — SKILLS SECTION
+    =========================================== -->
+    <section class="section skills" id="skills" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number"></span>
+          <h2 class="section-title">SKILLS & TECH STACK</h2>
+        </div>
+
+        <div class="skills-wrapper">
+          
+          <!-- Programming Category -->
+          <div class="skill-category">
+            <h3 class="category-title">FRONTEND & BACKEND</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-number">01</span>
+                <i class="devicon-html5-plain colored skill-icon"></i>
+                <span class="skill-name">HTML</span>
+                <span class="skill-cat">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">02</span>
+                <i class="devicon-css3-plain colored skill-icon"></i>
+                <span class="skill-name">CSS</span>
+                <span class="skill-cat">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">03</span>
+                <i class="devicon-javascript-plain colored skill-icon"></i>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-cat">Frontend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">04</span>
+                <i class="devicon-php-plain colored skill-icon"></i>
+                <span class="skill-name">PHP</span>
+                <span class="skill-cat">Backend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">05</span>
+                <i class="devicon-laravel-original colored skill-icon"></i>
+                <span class="skill-name">Laravel</span>
+                <span class="skill-cat">Backend</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">06</span>
+                <i class="devicon-mysql-original colored skill-icon"></i>
+                <span class="skill-name">MySQL</span>
+                <span class="skill-cat">Database</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Design Category -->
+          <div class="skill-category">
+            <h3 class="category-title">DESIGN & INTERFACE</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-number">07</span>
+                <i class="devicon-figma-plain skill-icon"></i>
+                <span class="skill-name">Figma</span>
+                <span class="skill-cat">UI/UX Design</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">08</span>
+                <i class="devicon-xd-plain colored skill-icon"></i>
+                <span class="skill-name">UI/UX Layouting</span>
+                <span class="skill-cat">Design System</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools Category -->
+          <div class="skill-category">
+            <h3 class="category-title">TOOLS & WORKFLOW</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-number">09</span>
+                <i class="devicon-github-original colored skill-icon"></i>
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-cat">Version Control</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-number">10</span>
+                <i class="devicon-vscode-plain colored skill-icon"></i>
+                <span class="skill-name">VS Code</span>
+                <span class="skill-cat">IDE</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          05 — PROJECTS SECTION
+    =========================================== -->
+    <section class="section projects" id="projects" data-reveal>
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-number"></span>
+          <h2 class="section-title">PROYEKKU</h2>
+        </div>
+
+        <p class="section-description">
+          Sebagian besar proyek di bawah ini adalah desain UI/UX yang dirancang dengan memperhatikan kenyamanan pengguna dan tampilan visual yang rapi, dilengkapi satu proyek pengembangan web sebagai contoh penerapannya.
+        </p>
+
+        <!-- Project Filters -->
+        <div class="project-filters" role="tablist" aria-label="Filter Proyek">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" type="button">ALL</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" type="button">WEB</button>
+          <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false" type="button">UI/UX</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+
+          <!-- Project 01 -->
+          <article class="project-card" data-category="web">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-1.jpg" alt="Aplikasi Web Berbasis Laravel" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">WEB DEVELOPMENT</span>
+              <h3 class="project-title">Web Laravel Aqua Merce</h3>
+              <p class="project-description">Pengembangan sistem web interaktif berbasis Laravel dengan manajemen basis data MySQL yang terstruktur dan aman.</p>
+
+              <ul class="project-tags">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+                <a href="https://github.com/fahrezadwi42-ops" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary">GITHUB</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-2.jpg" alt="Desain UI/UX Figma" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Web Aqua Merce</h3>
+              <p class="project-description">Perancangan antarmuka aplikasi web di Figma mengutamakan kemudahan navigasi, responsivitas, dan estetika visual modern.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-2.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-3.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Design & Landing Page - Trekt Product Management</h3>
+              <p class="project-description">Perancangan antarmuka landing page untuk platform edukasi digital yang dirancang menggunakan Figma. Berfokus pada tata letak modern, visual yang bersih, serta pengalaman pengguna (user experience) yang intuitif bagi para profesional muda untuk belajar dan mengasah keterampilan manajemen produk.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-3.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-4.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Design & Landing Page - Pusat Informasi Bencana</h3>
+              <p class="project-description">Perancangan antarmuka situs web informasi dan tanggap darurat bencana alam. Berfokus pada kemudahan akses informasi real-time, transparansi data donasi, serta navigasi yang cepat dan intuitif bagi masyarakat maupun relawan.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-4.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-5.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Design & Landing Page - Task & Team Management Platform</h3>
+              <p class="project-description">Perancangan antarmuka landing page untuk platform manajemen tugas dan kolaborasi tim. Berfokus pada pengorganisasian kerja yang terstruktur, pemantauan progres tugas secara real-time, serta pengalaman pengguna yang efisien untuk produktivitas tim.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-5.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 06 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-6.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Web Landing Page - Website Informasi Kegiatan Sekolah / UKK</h3>
+              <p class="project-description">Perancangan antarmuka situs web informasi kegiatan institusi pendidikan dan dokumentasi Uji Kompetensi Keahlian. Berfokus pada tata letak galeri kegiatan yang rapi, pengumuman informasi yang transparan, serta navigasi situs yang ramah pengguna.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-6.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 07 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-7.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Design - Air Pay (Digital Wallet & Finance App)</h3>
+              <p class="project-description">Perancangan antarmuka aplikasi dompet digital dan manajemen keuangan seluler. Berfokus pada kemudahan navigasi menu (dashboard, my wallet, statistics), visualisasi data pengeluaran yang transparan, serta pengalaman pengguna yang intuitif dan aman.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-7.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 08 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-8.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UI/UX Design - Dashboard Admin Sekolah (School Management System)</h3>
+              <p class="project-description">Perancangan antarmuka dashboard admin berbasis web untuk pengelolaan data dan informasi sistem administrasi sekolah. Berfokus pada kemudahan navigasi menu samping (sidebar), visualisasi statistik data yang terstruktur, serta pengalaman pengguna yang efisien bagi administrator.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-8.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 09 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-9.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain UPoster Promosi - Layanan Solusi Desain Grafis</h3>
+              <p class="project-description">Perancangan poster digital sebagai materi promosi untuk jasa desain grafis. Desain ini berfokus pada penyampaian informasi layanan yang jelas dan terstruktur, mencakup dua kategori utama: konten media sosial (seperti landing page, logo, Instagram story) dan kebutuhan percetakan (seperti banner, kartu nama, poster). Dengan tata letak modern dan profesional, poster ini dirancang untuk menarik perhatian klien potensial.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-9.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 10 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="assets/images/projects/project-10.jpg" alt="Desain UI/UX Aplikasi Mobile" class="project-image" loading="lazy">
+              <span class="project-number"></span>
+            </div>
+
+            <div class="project-content">
+              <span class="project-category">UI/UX DESIGN</span>
+              <h3 class="project-title">Desain Graphic Design & Branding - Health Care Logo Design</h3>
+              <p class="project-description">Perancangan identitas visual dan desain logo untuk sektor layanan kesehatan. Berfokus pada filosofi lambang medis yang profesional, kombinasi warna yang menenangkan (biru dan hijau), serta bentuk tangan pelindung yang mencerminkan kepedulian dan kepercayaan.</p>
+
+              <ul class="project-tags">
+                <li>Figma</li>
+                <li>UI/UX</li>
+              </ul>
+
+              <div class="project-links">
+                <a href="project-detail-10.html" class="btn btn-small btn-primary">VIEW DETAILS</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+          08 — CONTACT SECTION
+    =========================================== -->
+    <section class="section contact" id="contact" data-reveal>
+      <div class="container">
+        
+        <div class="contact-wrapper">
+          
+          <div class="contact-info">
+            <span class="section-number"></span>
+            <h2 class="contact-headline">
+              MARI BEKERJA<br>
+              <span class="headline-accent">SAMA.</span>
+            </h2>
+
+            <p class="contact-subtext">
+              Tertarik bekerjasama, atau diskusi proyek? Silakan hubungi saya melalui form atau saluran di samping/bawah ini.
+            </p>
+
+            <div class="contact-details">
+              <div class="detail-item">
+                <span class="detail-label">EMAIL</span>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fahrezadwi42@gmail.com" target="_blank" rel="noopener noreferrer" class="detail-value">fahrezadwi42@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <span class="socials-label">FIND ME ON:</span>
+              <ul class="social-links">
+                <li>
+                  <a href="https://github.com/fahrezadwi42-ops" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+                    <span>GITHUB</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z"/></svg>
+                    <span>LINKEDIN</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/fhrzdwin?stkn=Y3cyNmYybmg0Z2Nm" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    <span>INSTAGRAM</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form">
+
+              <!-- Access key dari web3forms.com -->
+              <input type="hidden" name="access_key" value="d8abd927-202b-41fb-8b7a-0a4f0faf443f">
+              <input type="checkbox" name="botcheck" style="display:none">
+
+              <div class="form-group">
+                <label for="user-name" class="form-label">NAMA LENGKAP</label>
+                <input type="text" id="user-name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="form-label">ALAMAT EMAIL</label>
+                <input type="email" id="user-email" name="email" class="form-input" placeholder="nama@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-subject" class="form-label">SUBJEK / JUDUL</label>
+                <input type="text" id="user-subject" name="subject" class="form-input" placeholder="Tujuan pesan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-message" class="form-label">PESAN</label>
+                <textarea id="user-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tuliskan detail pesan Anda..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">KIRIM PESAN →</button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+        09 — FOOTER SECTION
+  =========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">FAHREZA<span class="logo-accent">.NF</span></a>
+        <p class="footer-desc">Junior Web Developer & UI/UX Design Enthusiast.</p>
+      </div>
+
+      <div class="footer-links">
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/fahrezadwi42-ops" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+              <span>GITHUB</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/fahreza-dwi-nf-741545442/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z"/></svg>
+              <span>LINKEDIN</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fhrzdwin?stkn=Y3cyNmYybmg0Z2Nm" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              <span>INSTAGRAM</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Fahreza Dwi Nurfaizum. All rights reserved.</p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External Script Hook -->
+  <script src="js/script.js"></script>
+</body>
+</html>
